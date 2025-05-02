@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz-Application</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <section class="landing-Page" id="landing-Page">
+        <div class="front_Page">
+            <div class="display">
+                <h1>Welcome to Quiz Master</h1>
+                <a href="#Coding-Quiz" class="btn">Start Now</a>
+            </div>
+        </div>
+    </section>
+
+    <header class="header" id="head">
+        <h1>Quiz Master</h1>
+    </header>
+
+    <nav class="navbar">
+        <a href="#landing-Page">Home</a>
+        <a href="#Coding-Quiz">Quiz</a>
+        <a href="#Notes">Notes</a>
+    </nav>
+
+    <section class="Coding-Quiz" id="Coding-Quiz">
+        <h1 class="name">Coding Quiz</h1>
+        <p class="para">
+            Welcome to the ultimate coding quiz challenge! Test your skills in Java, Python, JavaScript, and .NET.
+            Whether you're a beginner or an experienced coder, these quizzes are designed to enhance your knowledge and
+            provide you with an exciting way to learn.
+            Choose a category below and see how much you know about programming languages, concepts, and frameworks.
+        </p>
+
+        <div class="for-cards">
+            <div class="card">
+                <img src="images/java.jpg" alt="java image">
+                <h1>JAVA</h1>
+                <p>Think you know Java? Take this quiz to test your knowledge of core Java concepts, OOP principles, and
+                    more!</p>
+                <h1>FREE</h1>
+                <button class="btn" onclick="startQuiz('java')">Take Quiz</button>
+            </div>
+            <div class="card">
+                <img src=".//images/python.jpg" alt="PYTHON image">
+                <h1>PYTHON</h1>
+                <p>Dive into Python programming! Answer questions about Python syntax, libraries, and coding techniques.
+                </p>
+                <h1>FREE</h1>
+                <button class="btn" onclick="startQuiz('Python')">Take Quiz</button>
+            </div>
+            <div class="card">
+                <img src=".//images/js.png" alt="JAVASCRIPT image">
+                <h1>JAVASCRIPT</h1>
+                <p>How well do you know JavaScript? Test your skills in functions, DOM manipulation, ES6, and beyond!
+                </p>
+                <h1>FREE</h1>
+                <button class="btn" onclick="startQuiz('JavaScript')">Take Quiz</button>
+            </div>
+            <div class="card">
+                <img src=".//images/net.png" alt="NET image">
+                <h1>.NET</h1>
+                <p>Explore .NET technologies! This quiz will test your understanding of .NET framework and application
+                    development.</p>
+                <h1>FREE</h1>
+                <button class="btn" onclick="startQuiz('.net')">Take Quiz</button>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="Notes" id="Notes">
+        <h1 class="name">Notes</h1>
+        <p class="para">
+            Enhance your learning with our curated notes and resources! These notes are designed to help you grasp the
+            essential concepts of programming languages, frameworks, and tools.
+            Use these materials to prepare for quizzes and master coding fundamentals effectively.
+        </p>
+        <div id="notesContainer" class="notes-container">
+            <div class="image-div">
+                <div class="img">
+                    <a target="_blank">
+                        <img src=".//images/java.jpg" alt="Java Notes" class="clickable-image" data-pdf="Java.pdf">
+                    </a>
+                </div>
+                <div class="img">
+                    <a target="_blank">
+                        <img src=".//images/compiler.png" alt="Compiler Notes" class="clickable-image"
+                            data-pdf="Compiler_Design.pdf">
+                    </a>
+                </div>
+                <div class="img">
+                    <a target="_blank">
+                        <img src=".//images/spring.png" alt="Spring Framework Notes" class="clickable-image"
+                            data-pdf="Spring.pdf">
+                    </a>
+                </div>
+                <div class="img">
+                    <a target="_blank">
+                        <img src=".//images/react.png" alt="React Notes" class="clickable-image" data-pdf="ReactJS.pdf">
+                    </a>
+                </div>
+                <div class="img">
+                    <a target="_blank">
+                        <img src=".//images/dev.jpg" alt="Developer Notes" class="clickable-image"
+                            data-pdf="DevOps.pdf">
+                    </a>
+                </div>
+                <div class="img">
+                    <a target="_blank">
+                        <img src=".//images/python.jpg" alt="Python Notes" class="clickable-image"
+                            data-pdf="Python.pdf">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer-section">
+        <small>All Rights Reserved</small>
+        <small>Developed & Maintained By
+            <a href="https://www.linkedin.com/in/gourav-patidar-746203274/" target="_blank">Gourav Patidar</a>
+        </small>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
